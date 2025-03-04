@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>JASA PENGETIKAN</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script>
+            function orderPackage(packageName, price) {
+                var message = encodeURIComponent("Halo, saya ingin memesan " + packageName + " dengan harga " + price + "/halaman. Mohon informasinya lebih lanjut.");
+                window.open("https://wa.me/6283831428495?text=" + message, "_blank");
+            }
+        </script>
+    </head>
+    <body>
+        
+        <!-- NAVIGATOR BAR -->
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <h1 class="h1-navbar">PAKET JASA PENGETIKAN</h1>
+            </ul>
+        </div>
+
+        <!-- PAKET TITLE -->
+         <div class="container">
+            <table>
+                <tr><th colspan="2" class="paket-title">PAKET HEMAT</th></tr>
+                <tr><td>Cocok untuk tugas kecil & dokumen singkat</td></tr>
+                <tr><td>Pengetikan hingga 5 halaman</td></tr>
+                <tr><td>Format standar (Times New Roman, 12pt, spasi 1.5)</td></tr>
+                <tr><td>Revisi 1x</td></tr>
+                <tr><td>Harga: Rp 5.000/halaman</td></tr>
+                <tr><td><button onclick="orderPackage('Paket Hemat', 'Rp 5.000')">Pesan Sekarang</button></td></tr>
+            </table>
+            <table>
+                <tr><th colspan="2" class="paket-title">PAKET STANDAR</th></tr>
+                <tr><td>Cocok untuk laporan, makalah, dan artikel</td></tr>
+                <tr><td>Pengetikan hingga 20 halaman</td></tr>
+                <tr><td>Format sesuai permintaan</td></tr>
+                <tr><td>Konversi ke PDF jika diperlukan</td></tr>
+                <tr><td>Revisi 2x</td></tr>
+                <tr><td>Harga: Rp 4.500/halaman</td></tr>
+                <tr><td><button onclick="orderPackage('Paket Standar', 'Rp 4.500')">Pesan Sekarang</button></td></tr>
+            </table>
+            <table>
+                <tr><th colspan="2" class="paket-title">PAKET PREMIUM</th></tr>
+                <tr><td>Cocok untuk skripsi, tesis, dan laporan bisnis</td></tr>
+                <tr><td>Pengetikan hingga 50 halaman</td></tr>
+                <tr><td>Format sesuai standar akademik / bisnis</td></tr>
+                <tr><td>Revisi 3x</td></tr>
+                <tr><td>Konversi ke PDF & Word</td></tr>
+                <tr><td>Pembuatan daftar isi otomatis</td></tr>
+                <tr><td>Harga: Rp 4.000/halaman</td></tr>
+                <tr><td><button onclick="orderPackage('Paket Premium', 'Rp 4.000')">Pesan Sekarang</button></td></tr>
+            </table>
+            <table>
+                <tr><th colspan="2" class="paket-title">PAKET EKSPRESS</th></tr>
+                <tr><td>Untuk kebutuhan mendesak</td></tr>
+                <tr><td>Pengetikan 24 jam s/d selesai</td></tr>
+                <tr><td>Format sesuai permintaan</td></tr>
+                <tr><td>Revisi 1x</td></tr>
+                <tr><td>Harga: Rp 6.000/halaman</td></tr>
+                <tr><td><button onclick="orderPackage('Paket Ekspress', 'Rp 6.000')">Pesan Sekarang</button></td></tr>
+            </table>
+        </div>
+    </body>
+</html>
